@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
         btnSpeak!!.setOnClickListener{speakOut()}
         btnClose!!.setOnClickListener{closeApp()}
         Handler().postDelayed({
-            tts!!.speak("Detecting.$text . Click the top portion to hear what is in front of you. And click same portion to go back.", TextToSpeech.QUEUE_FLUSH, null, "")
+            tts!!.speak("Detecting , $text , ... Click the top portion to hear what is in front of you. And click same portion to go back.", TextToSpeech.QUEUE_FLUSH, null, "")
 
         }, 1500)
     }
