@@ -30,7 +30,7 @@ import org.tensorflow.lite.task.vision.detector.ObjectDetector
 class ObjectDetectorHelper(
   var threshold: Float = 0.5f,
   var numThreads: Int = 2,
-  var maxResults: Int = 3,
+  var maxResults: Int = 4,
   var currentDelegate: Int = 0,
   var currentModel: Int = 0,
   val context: Context,
@@ -125,14 +125,32 @@ class ObjectDetectorHelper(
         val results = objectDetector?.detect(tensorImage)
 
         var tmptxt= ""
+        var objectsMap=HashMap<String,Int>();
         for (result in results!!) {
             result.categories.forEach {
                 tmptxt+=it.label;
                 tmptxt+=",";
+                if(objectsMap.containsKey(it.label)){
+                    objectsMap[it.label]=objectsMap[it.label]!!+1;
+                }else{
+                    objectsMap[it.label]=1;
+                }
+
 
             }
         }
-        Text.text =tmptxt;
+        var textDesc=""
+        for (key in objectsMap.keys) {
+            textDesc+=objectsMap[key];
+            textDesc+=" ";
+            textDesc+=key;
+
+            textDesc+=",";
+        }
+
+
+
+        Text.text =textDesc;
 
 
 
