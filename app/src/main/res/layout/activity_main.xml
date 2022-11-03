@@ -36,6 +36,7 @@
             android:layout_marginTop="?android:attr/actionBarSize"
             android:background="@android:color/transparent"
             android:keepScreenOn="true"
+            android:visibility="visible"
             app:defaultNavHost="true"
             app:navGraph="@navigation/nav_graph"
             tools:context=".MainActivity" />
