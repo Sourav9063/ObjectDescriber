@@ -24,6 +24,7 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import org.tensorflow.lite.examples.objectdetection.Text.text
 import org.tensorflow.lite.examples.objectdetection.databinding.ActivityMainBinding
+import java.util.Locale
 
 /**
  * Main entry point into our app. This app follows the single-activity pattern, and all
@@ -43,7 +44,7 @@ class MainActivity : AppCompatActivity() {
         btnClose = findViewById(R.id.btnclose)
         tts = TextToSpeech(this) { status ->
             if (status != TextToSpeech.ERROR) {
-                tts!!.language = java.util.Locale.UK
+                tts!!.setLanguage( Locale("en_GB"))
             }
             else{
                 println("error")
@@ -55,7 +56,7 @@ class MainActivity : AppCompatActivity() {
         btnSpeak!!.setOnClickListener{speakOut()}
         btnClose!!.setOnClickListener{closeApp()}
         Handler().postDelayed({
-            tts!!.speak("Detecting , $text , ... Click the top portion to hear what is in front of you. And click same portion to go back.", TextToSpeech.QUEUE_FLUSH, null, "")
+            tts!!.speak("Detecting , $text , ... Click the middle portion to hear what is in front of you. And click the top portion to go back.", TextToSpeech.QUEUE_FLUSH, null, "")
 
         }, 1500)
     }

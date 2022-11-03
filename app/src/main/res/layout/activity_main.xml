@@ -57,7 +57,8 @@
         android:background="#51FFFFFF"
         android:text="SPEAK"
         app:layout_anchor="@+id/relativeLayout"
-        app:layout_anchorGravity="top|center" />
+        app:layout_anchorGravity="center"
+        />
 
     <Button
         android:id="@+id/btnclose"
@@ -66,6 +67,7 @@
         android:background="#85FD1C1C"
         android:text="CLOSE"
         app:layout_anchor="@+id/relativeLayout"
-        app:layout_anchorGravity="center" />
+
+        app:layout_anchorGravity="top|center" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

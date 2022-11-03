@@ -32,10 +32,6 @@
         "source": "C:\\Users\\USER\\.gradle\\daemon\\7.4\\org.tensorflow.lite.examples.objectdetection.app-main-34:\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "org.tensorflow.lite.examples.objectdetection.app-merged_res-32:/layout_info_bottom_sheet.xml.flat",
-        "source": "org.tensorflow.lite.examples.objectdetection.app-main-34:/layout/info_bottom_sheet.xml"
-    },
-    {
         "merged": "C:\\Users\\USER\\.gradle\\daemon\\7.4\\org.tensorflow.lite.examples.objectdetection.app-merged_res-32:\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
         "source": "C:\\Users\\USER\\.gradle\\daemon\\7.4\\org.tensorflow.lite.examples.objectdetection.app-main-34:\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
     },
@@ -62,6 +58,10 @@
     {
         "merged": "C:\\Users\\USER\\.gradle\\daemon\\7.4\\org.tensorflow.lite.examples.objectdetection.app-merged_res-32:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\USER\\.gradle\\daemon\\7.4\\org.tensorflow.lite.examples.objectdetection.app-pngs-27:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "org.tensorflow.lite.examples.objectdetection.app-merged_res-32:/layout_activity_main.xml.flat",
+        "source": "org.tensorflow.lite.examples.objectdetection.app-main-34:/layout/activity_main.xml"
     },
     {
         "merged": "C:\\Users\\USER\\.gradle\\daemon\\7.4\\org.tensorflow.lite.examples.objectdetection.app-merged_res-32:\\layout_activity_main.xml.flat",
